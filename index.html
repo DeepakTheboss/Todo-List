@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="resorces/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+     <!-- creating main container for todo list -->
+    <div class="main-container">
+
+         <!-- adding Pladeholder input container and add button -->
+        <div class="enterTask">
+            <input type="text" placeholder="Please Add a Task ">
+            <button>Add</button>
+        </div>
+
+         <!-- creating ordered list for task pending  -->
+        <ol class="task-Pending">
+            <h3>Task Pending</h3>
+        </ol>
+
+         <!-- creating pending task counter -->
+        <div class="counter-1" >
+            <p>Total Pending Task: &nbsp;</p>
+            <h4 id="notCompleted">0</h4>
+        </div>
+
+         <!-- creating ordered list for Task which is completed -->
+        <ol class="task-Done">
+            <h3>Task Completed</h3>
+        </ol>
+         
+         <!-- creating completed task counter-->
+        <div class="counter-2">
+            <p>Total Completed Task: &nbsp;</p>
+            <h4 id="Completed">0</h4>
+        </div>
+        <!-- creating Reset button -->
+        <div class="box">
+            <div class="reset">
+                <button>Reset</button>
+            </div>
+        </div>
+
+    </div>
+
+ <!-- adding script for javascript file into html file -->
+    <script src="resorces/main.js"> </script>   
+    </script>
+</body>
+</html>

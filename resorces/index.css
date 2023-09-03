@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #61b083;
+    background: linear-gradient(145deg,#03bb6ecb 0%,#208bb6 30%,#9670ef 70%, #55f05fd2 90%);
+
+}
+
+.main-container {
+    position: relative;
+    max-width: 700px;
+    padding: 10px;
+    margin: 1rem auto;
+    border: none 10px solid;
+    border-radius: 3rem;
+    box-shadow: 0 0 300px #eff0f3;
+}
+
+.enterTask {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+}
+
+.enterTask > input[type='text']{
+    width: 90%;
+    color: #1c1c1d;
+    border: none;
+    border-bottom: 2px solid #34ed0f;
+    background: none;
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+}
+
+.enterTask button {
+    margin: 0 5px;
+    background: #432882;
+    box-shadow: 3px 3px #a395f4;
+    color: #18b1e9;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+.enterTask button:hover {
+    box-shadow: 0 0 60px #0336ee;
+    font-size: 22px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.reset button {
+    margin: 200px 5px;
+    background: #432882;
+    box-shadow: 3px 3px #a395f4;
+    color: #18b1e9;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+.reset button:hover {
+    box-shadow: 0 0 60px #0336ee;
+    font-size: 22px;
+}
+.task-Pending, .task-Done {
+    margin: 5px 0;
+    padding: 20px;
+}
+
+.counter-1, .counter-2 {
+    display: inline-flex;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+ol {
+    list-style: none;
+}
+
+ol li {
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0;
+    background: #69e99d;;
+    counter-increment: my-counter;
+}
+
+ol.task-Done li {
+    background: greenyellow;
+}
+
+ol li::before {
+    content: counter(my-counter);
+    background: #231381;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-right:0.5rem ;
+}
+
+li button {
+    float: right;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 28px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;    
+}
